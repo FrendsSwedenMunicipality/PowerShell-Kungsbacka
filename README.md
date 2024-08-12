@@ -1,6 +1,6 @@
 # PowerShell
 
-Kör godtycklickliga PowerShell-skript i en subprocess, serialiserar resultatet som JSON som sedan deserialiseras till ett JObject.
+Kör godtycklickliga PowerShell-skript i en subprocess, serialiserar resultatet som JSON som sedan deserialiseras till ett JObject. Skriptet körs med PowerShell 5.1. Om man vill köra med PowerShell 7 så ändrar man bara sökvägen till PowerShell i koden (psPath).
 
 Parametrar:
 * **Script**: skriptet som ska köras.
