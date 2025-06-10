@@ -26,7 +26,7 @@ $script = @'
 [Console]::OutputEncoding = [System.Text.Encoding]::UTF8
 $scriptBlock = [ScriptBlock]::Create($script)
 try {{$res = & $scriptBlock}} catch {{Write-Host $_.ToString(); exit 1}}
-$res | ConvertTo-Json -Compress -Depth 10 -ErrorAction SilentlyContinue
+$res | ConvertTo-Json -Compress -Depth 2 -ErrorAction SilentlyContinue
 ";
 
     var encodedComand = Convert.ToBase64String(System.Text.Encoding.Unicode.GetBytes(command));
